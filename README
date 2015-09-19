@@ -1,3 +1,14 @@
+----- chris-devel branch of FS-UAE -----
+
+My Changes:
+
+  * added vpar protocol support (see vpar.md for details)
+  * added segment tracker functions in internal debugger
+
+----- end of message ----
+
+
+
 FS-UAE README
 =============
 

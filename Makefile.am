@@ -214,6 +214,7 @@ libuae_a_SOURCES = \
 	src/cdtvcr.cpp \
 	src/cfgfile.cpp \
 	src/cia.cpp \
+	src/clockport.cpp \
 	src/consolehook.cpp \
 	src/cpuboard.cpp \
 	src/cpummu.cpp \
@@ -221,6 +222,7 @@ libuae_a_SOURCES = \
 	src/crc32.cpp \
 	src/custom.cpp \
 	src/debug.cpp \
+	src/debuginfo.cpp \
 	src/def_icons.cpp \
 	src/devices.cpp \
 	src/disk.cpp \
@@ -473,6 +475,7 @@ libuae_a_SOURCES = \
 	src/od-win32/picasso96_win.h \
 	src/od-win32/serial_win32.cpp \
 	src/od-win32/win32_uaenet.cpp \
+	src/patch.cpp \
 	src/ppc/pixman-stubs.cpp \
 	src/ppc/ppc.cpp \
 	src/qemu.cpp \
@@ -503,6 +506,7 @@ libuae_a_SOURCES = \
 	src/scsi.cpp \
 	src/scsiemul.cpp \
 	src/scsitape.cpp \
+	src/segtracker.cpp \
 	src/slirp.cpp \
 	src/specialmonitors.cpp \
 	src/statusline.cpp \
