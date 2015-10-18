@@ -23,7 +23,7 @@ bundle:
 	mkdir -p $(dname)/FS-UAE.app/Contents/Resources
 	mkdir -p $(dname)/FS-UAE.app/Contents/
 	cp Info.plist $(dname)/FS-UAE.app/Contents/
-	cp ./PkgInfo $(dname)/FS-UAE.app/Contents/
+	cp @srcdir@/PkgInfo $(dname)/FS-UAE.app/Contents/
 	cp ../../fs-uae $(dname)/FS-UAE.app/Contents/MacOS/
 	cp ../../fs-uae.dat $(dname)/FS-UAE.app/Contents/MacOS/
 	cp ../../fs-uae-device-helper $(dname)/FS-UAE.app/Contents/MacOS/
@@ -33,10 +33,10 @@ bundle:
 	cp -pPR ../../share/locale $(dname)/FS-UAE.app/Contents/Resources
 
 	strip $(dname)/FS-UAE.app/Contents/MacOS/*
-	cp ./fs-uae.icns $(dname)/FS-UAE.app/Contents/Resources/
-	cp ./fs-uae-config.icns $(dname)/FS-UAE.app/Contents/Resources/
-	# cp -pPR ./../../licenses $(dname)/FS-UAE.app/Contents/Resources/
-	# cp ./../../COPYING $(dname)/FS-UAE.app/Contents/Resources/
-	# cp ./../../README $(dname)/FS-UAE.app/Contents/Resources/
-	./standalone.py $(dname)/FS-UAE.app
-	python3 ./sign.py $(dname)/FS-UAE.app
+	cp @srcdir@/fs-uae.icns $(dname)/FS-UAE.app/Contents/Resources/
+	cp @srcdir@/fs-uae-config.icns $(dname)/FS-UAE.app/Contents/Resources/
+	# cp -pPR @srcdir@/../../licenses $(dname)/FS-UAE.app/Contents/Resources/
+	# cp @srcdir@/../../COPYING $(dname)/FS-UAE.app/Contents/Resources/
+	# cp @srcdir@/../../README $(dname)/FS-UAE.app/Contents/Resources/
+	@srcdir@/standalone.py $(dname)/FS-UAE.app
+	python3 @srcdir@/sign.py $(dname)/FS-UAE.app

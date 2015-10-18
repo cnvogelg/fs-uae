@@ -234,6 +234,7 @@ libuae_a_SOURCES = \
 	src/cdtvcr.cpp \
 	src/cfgfile.cpp \
 	src/cia.cpp \
+	src/clockport.cpp \
 	src/consolehook.cpp \
 	src/cpuboard.cpp \
 	src/cpummu.cpp \
