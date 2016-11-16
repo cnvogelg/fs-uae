@@ -180,7 +180,7 @@ void target_restart (void) {
 void target_quit (void)
 {
     write_log("UAE: Stopping\n");
-    printf("UAE: Stopping\n");
+    //printf("UAE: Stopping\n");
 }
 
 void target_fixup_options (struct uae_prefs *p) {

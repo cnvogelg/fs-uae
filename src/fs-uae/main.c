@@ -1053,7 +1053,7 @@ int main(int argc, char *argv[])
 
     //result = parse_options(argc, argv);
 
-    printf(COPYRIGHT_NOTICE, PACKAGE_VERSION, OS_NAME_2, ARCH_NAME_2);
+    //printf(COPYRIGHT_NOTICE, PACKAGE_VERSION, OS_NAME_2, ARCH_NAME_2);
     fs_log(COPYRIGHT_NOTICE, PACKAGE_VERSION, OS_NAME_2, ARCH_NAME_2);
 
     char *current_dir = g_get_current_dir();

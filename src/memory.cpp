@@ -1259,9 +1259,9 @@ static void log_kickstart(uae_u8 *mem, int size)
 	if (rd) {
 		char tmp[MAX_DPATH];
 		getromname(rd, tmp);
-		printf("UAE: %s\n", tmp);
+		//printf("UAE: %s\n", tmp);
 	} else {
-		printf("UAE: KS ROM %08x (%d bytes)\n", crc32, size);
+		//printf("UAE: KS ROM %08x (%d bytes)\n", crc32, size);
 	}
 }
 
@@ -1400,7 +1400,7 @@ static bool load_extendedkickstart (const TCHAR *romextfile, int type)
 			extendedkickmem_type = EXTENDED_ROM_CD32;
 		} else if (need_uae_boot_rom () != 0xf00000) {
 			extendedkickmem_type = EXTENDED_ROM_CDTV;
-		}	
+		}
 	} else {
 		extendedkickmem_type = type;
 	}

@@ -70,7 +70,6 @@ void uae_fatal(const char *format, ...) UAE_PRINTF_FORMAT(1, 2);
 #define UAE_STUB(format, ...) \
 { \
 	UAE_LOG_STUB(format, ##__VA_ARGS__) \
-	printf(" -- stub -- %s " format "\n", __func__, ##__VA_ARGS__); \
 }
 
 /* UAE-specific functions */
