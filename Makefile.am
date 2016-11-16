@@ -461,6 +461,7 @@ libuae_a_SOURCES = \
 	src/include/uaenative.h \
 	src/include/uaeresource.h \
 	src/include/uaeserial.h \
+	src/include/ucon.h \
 	src/include/uni_common.h \
 	src/include/unpacked.h \
 	src/include/x86.h \
@@ -552,6 +553,7 @@ libuae_a_SOURCES = \
 	src/od-fs/threading.cpp \
 	src/od-fs/uae_host.cpp \
 	src/od-fs/uaemisc.cpp \
+	src/od-fs/ucon_host.cpp \
 	src/od-fs/video.cpp \
 	src/od-fs/vpar.cpp \
 	src/od-fs/vpar.h \
@@ -617,6 +619,7 @@ libuae_a_SOURCES = \
 	src/uaenative.cpp \
 	src/uaeresource.cpp \
 	src/uaeserial.cpp \
+	src/ucon.cpp \
 	src/vm.cpp \
 	src/x86.cpp \
 	src/zfile.cpp \

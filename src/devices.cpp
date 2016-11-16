@@ -44,6 +44,7 @@
 #include "bsdsocket.h"
 #include "uaeserial.h"
 #include "uaeresource.h"
+#include "ucon.h"
 #include "native2amiga.h"
 #include "dongle.h"
 #include "gensound.h"
@@ -371,6 +372,7 @@ void do_leave_program (void)
 	driveclick_free();
 #endif
 	ethernet_enumerate_free();
+	ucon_cleanup();
 }
 
 void virtualdevice_init (void)
@@ -384,6 +386,7 @@ void virtualdevice_init (void)
 	segtracker_install ();
 #endif /* WITH_SEGTRACKER */
 	uaeres_install ();
+	ucon_install ();
 	hardfile_install ();
 #endif
 #ifdef SCSIEMU
